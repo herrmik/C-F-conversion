@@ -8,8 +8,9 @@ let temp;
 calculateButton.addEventListener("click", convert);
 
 
-function convert() {
-    event.preventDefault();
+function convert(e) {
+    e.preventDefault();
+
   if (toFahrenheit.checked) {
     temp = Number(textBox.value);
     temp = (temp * 9) / 5 + 32;
